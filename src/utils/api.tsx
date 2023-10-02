@@ -1,7 +1,7 @@
 import formatDate from '@/utils/formatDate';
 import markdownToHtml from '@/utils/markdownToHtml';
 
-export const API_URL = process.env.NEXT_PUBLIC_STRAPI_API_URL;
+export const API_URL = process.env.STRAPI_API_URL;
 
 const REVALIDATION_OPTIONS = {next: {revalidate: 3600}}
 
