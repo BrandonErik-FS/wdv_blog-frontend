@@ -1,0 +1,38 @@
+.main {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1000px;
+    background-color: #f1f1f1;
+}
+.thumbnail {
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+}
+.metadata {
+    display: flex;
+    margin: 1rem 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.metakey {
+    font-weight: bold;
+}
+.metavalue {
+    font-weight: normal;
+}
+.content,
+.content p {
+    margin: 1rem 0;
+}
+.content ul {
+    margin: 0 2rem;
+}
+
+@media (min-width: 1000px) {
+    .main {
+        margin: 1.5rem auto;
+    }
+}
