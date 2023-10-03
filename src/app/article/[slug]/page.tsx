@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { API_URL, getArticle } from '@/utils/api';
+import { getArticle } from '@/utils/api';
 
 import ArticleSection from '@/components/ArticleSection/ArticleSection';
 
@@ -15,7 +15,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
         <>
             <ArticleSection
                 imageUrl={
-                    API_URL +
                     article.attributes.image.data.attributes.formats.large.url
                 }
                 imageWidth={

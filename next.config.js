@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
+        domains: ['res.cloudinary.com'],
         remotePatterns: [
             {
                 protocol: process.env.NEXT_IMAGES_PROTOCOL,

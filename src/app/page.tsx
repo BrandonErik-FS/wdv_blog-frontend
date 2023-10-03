@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import { API_URL, getArticles } from '@/utils/api';
+import { getArticles } from '@/utils/api';
 
 import ArticleCard from '@/components/ArticleCard/ArticleCard';
 import ArticlesGrid from '@/components/ArticlesGrid/ArticlesGrid';
@@ -20,7 +20,6 @@ export default async function Home() {
                 articleId={article.id}
                 articleSlug={article.attributes.slug}
                 imageUrl={
-                    API_URL +
                     article.attributes.image.data.attributes.formats.medium.url
                 }
                 imageWidth={
