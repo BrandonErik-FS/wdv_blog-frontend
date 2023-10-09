@@ -23,7 +23,7 @@ export const getArticle = async (slug: string) => {
 };
 
 export const getArticles = async () => {
-    const ARTICLES_ENDPOINT = API_URL + '/api/articles?populate=image,author';
+    const ARTICLES_ENDPOINT = API_URL + '/api/articles?populate=image,author&sort=publishedAt:desc';
 
     const query = await fetch(ARTICLES_ENDPOINT, REVALIDATION_OPTIONS);
     const response = await query.json();
